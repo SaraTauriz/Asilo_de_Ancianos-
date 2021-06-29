@@ -88,8 +88,9 @@ insert into PACIENTE values (3,3,135112624,'Milton','Parrales','hombre',59,'prim
 insert into PACIENTE values (4,4,135117624,'Nelson','Parrales','hombre',60,'primo');
 insert into PACIENTE values (5,5,137527624,'Anabel','Basurto','mujer',70,'hermano');
 insert into PACIENTE values (6,6,13127624,'Patricio','Basurto','hombre',70,'hermana');
-insert into PACIENTE values (7,7,151127624,'Jorge','Quijije','hombre',80,'01h00 a 02h00');
-insert into PACIENTE values (8,8,351127624,'Juan Arlos','Villarmar','hombre',55,'01h00 a 02h00');
+insert into PACIENTE values (7,7,151127624,'Jorge','Quijije','hombre',80,'hermano');
+insert into PACIENTE values (8,8,351127624,'Juan Arlos','Villarmar','hombre',55,'hermano');
+
 
 /*==============================================================*/
 /* Table: ALIMENESTABLECIDA                                     */
