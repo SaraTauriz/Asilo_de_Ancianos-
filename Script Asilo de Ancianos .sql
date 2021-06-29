@@ -263,17 +263,17 @@ create table TIPOPAGO (
    PAG_TIPO_PAGO        CHAR(50)             null,
    constraint PK_TIPOPAGO primary key (PAG_ID)
 );
-insert into TIPOPAGO values (1,1,'TAFGETA');
-insert into TIPOPAGO values (2,2,'TARGETA');
-insert into TIPOPAGO values (3,3,'TARGETA');
-insert into TIPOPAGO values (4,4,'TARGETA');
+insert into TIPOPAGO values (1,1,'TARJETA');
+insert into TIPOPAGO values (2,2,'TARJETA');
+insert into TIPOPAGO values (3,3,'TARJETA');
+insert into TIPOPAGO values (4,4,'TARJETA');
 insert into TIPOPAGO values (5,5,'EFECTIVO');
 insert into TIPOPAGO values (6,6,'EFECTIVO');
 insert into TIPOPAGO values (7,7,'EFECTIVO');
 insert into TIPOPAGO values (8,8,'EFECTIVO');
 
-insert into TIPOPAGO values (9,9,'TARGETA');
-insert into TIPOPAGO values (10,10,'TARGETA');
+insert into TIPOPAGO values (9,9,'TARJETA');
+insert into TIPOPAGO values (10,10,'TARJETA');
 insert into TIPOPAGO values (11,11,'DEPOSITO');
 insert into TIPOPAGO values (12,12,'DEPOSITO');
 insert into TIPOPAGO values (13,13,'CHEQUE');
