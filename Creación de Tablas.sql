@@ -10,6 +10,8 @@ create table TIPOPERSONAL (
    constraint PK_TIPOPERSONAL primary key (TIPOPER_ID)
 );
 
+
+
 /*==============================================================*/
 /* Table: PERSONAL                                              */
 /*==============================================================*/
@@ -27,19 +29,20 @@ create table PERSONAL (
    constraint PK_PERSONAL primary key (PER_ID)
 );
 
+
 /*==============================================================*/
 /* Table: PAGOPERSONAL                                          */
 /*==============================================================*/
 create table PAGOPERSONAL (
    PAGPER_ID            INT                     not null,
    PER_ID               INT                     not null,
-   DETFAC_ID            INT                     not null,
    PAGPER_DESCUENTOCEDITOS CHAR(50)             null,
    PAGPER_SALARIO       CHAR(50)                null,
    PAGPER_DESCUENTOSEGURO CHAR(50)              null,
    PAGPER_FECHAPAGO     CHAR(50)                null,
    constraint PK_PAGOPERSONAL primary key (PAGPER_ID)
 );
+
 
 /*==============================================================*/
 /* Table: SERVICIOREHABILITACION                                */
@@ -50,6 +53,7 @@ create table SERVICIOREHABILITACION (
    SEREAL_HORARIO       VARCHAR(50)          null,
    constraint PK_SERVICIOREHABILITACION primary key (SEREAL_ID)
 );
+
 
 /*==============================================================*/
 /* Table: FICHA                                                 */
@@ -67,6 +71,7 @@ create table FICHA (
    constraint PK_FICHA primary key (FIC_ID)
 );
 
+
 /*==============================================================*/
 /* Table: PERSONAENTIDAD                                        */
 /*==============================================================*/
@@ -82,6 +87,7 @@ create table PERSONAENTIDAD (
    constraint PK_PERSONAENTIDAD primary key (PER_EN_ID)
 );
 
+
 /*==============================================================*/
 /* Table: ATENCIONMEDICA                                        */
 /*==============================================================*/
@@ -95,6 +101,7 @@ create table ATENCIONMEDICA (
    ATEMED_HORARIO       CHAR(20)              null,
    constraint PK_ATENCIONMEDICA primary key (ATEMED_ID)
 );
+
 
 /*==============================================================*/
 /* Table: PACIENTE                                              */
@@ -111,6 +118,7 @@ create table PACIENTE (
    constraint PK_PACIENTE primary key (PA_ID)
 );
 
+
 /*==============================================================*/
 /* Table: ALIMENESTABLECIDA                                     */
 /*==============================================================*/
@@ -120,6 +128,7 @@ create table ALIMENESTABLECIDA (
    PER_ID               INT                  not null,
    constraint PK_ALIMENESTABLECIDA primary key (ALIMEN_ID)
 );
+
 
 /*==============================================================*/
 /* Table: ALIMENTACION                                          */
@@ -145,24 +154,25 @@ create table FACTURA (
    constraint PK_FACTURA primary key (FAC_ID)
 );
 
-/*==============================================================*/
-/* Table: DETFACTURA                                            */
-/*==============================================================*/
-create table DETFACTURA (
-   DETFAC_ID            INT                  not null,
-   FAC_ID               INT                  not null,
-   constraint PK_DETFACTURA primary key (DETFAC_ID)
-);
-
 
 /*==============================================================*/
 /* Table: TIPOPAGO                                              */
 /*==============================================================*/
 create table TIPOPAGO (
    PAG_ID               INT                  not null,
-   DETFAC_ID            INT                  not null,
    PAG_TIPO_PAGO        CHAR(50)             null,
    constraint PK_TIPOPAGO primary key (PAG_ID)
 );
 
+
+/*==============================================================*/
+/* Table: DETFACTURA                                            */
+/*==============================================================*/
+create table DETFACTURA (
+   DETFAC_ID            INT                  not null,
+   FAC_ID               INT                  not null,
+   PAG_ID               INT                  not null,
+   PAGPER_ID            INT                  null,
+   constraint PK_DETFACTURA primary key (DETFAC_ID)
+);
 
