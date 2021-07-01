@@ -1,7 +1,6 @@
 /*==============================================================*/
 /* Table: TIPOPERSONAL                                          */
 /*==============================================================*/
-
 insert into TIPOPERSONAL values (1,'si');
 insert into TIPOPERSONAL values (2,null,'si');
 insert into TIPOPERSONAL values (3,null,null,'si');
@@ -23,13 +22,13 @@ insert into PERSONAL values (7,2,1313196361,'Pico','Anchundia','via interbarrial
 /* Table: PAGOPERSONAL                                          */
 /*==============================================================*/
 
-insert into PAGOPERSONAL values (1,1,9,'50','7000','20','30 de cada mes');
-insert into PAGOPERSONAL values (2,2,10,'60','9000','20','30 de cada mes');
-insert into PAGOPERSONAL values (3,3,11,'50','7000','20','30 de cada mes');
-insert into PAGOPERSONAL values (4,4,12,'60','8000','30','30 de cada mes');
-insert into PAGOPERSONAL values (5,5,13,'70','8000','30','30 de cada mes');
-insert into PAGOPERSONAL values (6,6,14,'80','8000','30','30 de cada mes');
-insert into PAGOPERSONAL values (7,7,15,'100','7000','20','30 de cada mes');
+insert into PAGOPERSONAL values (1,1,'50','7000','20','30 de cada mes');
+insert into PAGOPERSONAL values (2,2,'60','9000','20','30 de cada mes');
+insert into PAGOPERSONAL values (3,3,'50','7000','20','30 de cada mes');
+insert into PAGOPERSONAL values (4,4,'60','8000','30','30 de cada mes');
+insert into PAGOPERSONAL values (5,5,'70','8000','30','30 de cada mes');
+insert into PAGOPERSONAL values (6,6,'80','8000','30','30 de cada mes');
+insert into PAGOPERSONAL values (7,7,'100','7000','20','30 de cada mes');
 
 /*==============================================================*/
 /* Table: SERVICIOREHABILITACION                                */
@@ -89,8 +88,7 @@ insert into PACIENTE values (4,4,135117624,'Nelson','Parrales','hombre',60,'prim
 insert into PACIENTE values (5,5,137527624,'Anabel','Basurto','mujer',70,'hermano');
 insert into PACIENTE values (6,6,13127624,'Patricio','Basurto','hombre',70,'hermana');
 insert into PACIENTE values (7,7,151127624,'Jorge','Quijije','hombre',80,'hermano');
-insert into PACIENTE values (8,8,351127624,'Juan Arlos','Villarmar','hombre',55,'hermano');
-
+insert into PACIENTE values (8,8,351127624,'Juan Arlos','Villarmar','hombre',55,'hermana');
 
 /*==============================================================*/
 /* Table: ALIMENESTABLECIDA                                     */
@@ -139,47 +137,32 @@ insert into FACTURA values (13,null,1000,10000);
 insert into FACTURA values (14,null,1000,10000);
 insert into FACTURA values (15,null,1000,10000);
 
-/*==============================================================*/
-/* Table: DETFACTURA                                            */
-/*==============================================================*/
-
-insert into DETFACTURA values (1,1);
-insert into DETFACTURA values (2,2);
-insert into DETFACTURA values (3,3);
-insert into DETFACTURA values (4,4);
-insert into DETFACTURA values (5,5);
-insert into DETFACTURA values (6,6);
-insert into DETFACTURA values (7,7);
-insert into DETFACTURA values (8,8);
-
-insert into DETFACTURA values (9,9);
-insert into DETFACTURA values (10,10);
-insert into DETFACTURA values (11,11);
-insert into DETFACTURA values (12,12);
-insert into DETFACTURA values (13,13);
-insert into DETFACTURA values (14,14);
-insert into DETFACTURA values (15,15);
 
 /*==============================================================*/
 /* Table: TIPOPAGO                                              */
 /*==============================================================*/
 
-insert into TIPOPAGO values (1,1,'TARJETA');
-insert into TIPOPAGO values (2,2,'TARJETA');
-insert into TIPOPAGO values (3,3,'TARJETA');
-insert into TIPOPAGO values (4,4,'TARJETA');
-insert into TIPOPAGO values (5,5,'EFECTIVO');
-insert into TIPOPAGO values (6,6,'EFECTIVO');
-insert into TIPOPAGO values (7,7,'EFECTIVO');
-insert into TIPOPAGO values (8,8,'EFECTIVO');
+insert into TIPOPAGO values (1,'tarjeta');
+insert into TIPOPAGO values (2,'cheque');
+insert into TIPOPAGO values (3,'deposito');
 
-insert into TIPOPAGO values (9,9,'TARJETA');
-insert into TIPOPAGO values (10,10,'TARJETA');
-insert into TIPOPAGO values (11,11,'DEPOSITO');
-insert into TIPOPAGO values (12,12,'DEPOSITO');
-insert into TIPOPAGO values (13,13,'CHEQUE');
-insert into TIPOPAGO values (14,14,'CHEQUE');
-insert into TIPOPAGO values (15,15,'CHEQUE');
+/*==============================================================*/
+/* Table: DETFACTURA                                            */
+/*==============================================================*/
 
+insert into DETFACTURA values (1,1,1);
+insert into DETFACTURA values (2,2,1);
+insert into DETFACTURA values (3,3,2);
+insert into DETFACTURA values (4,4,2);
+insert into DETFACTURA values (5,5,3);
+insert into DETFACTURA values (6,6,3);
+insert into DETFACTURA values (7,7,1);
+insert into DETFACTURA values (8,8,2);
 
-
+insert into DETFACTURA values (9,9,3,1);
+insert into DETFACTURA values (10,10,3,2);
+insert into DETFACTURA values (11,11,3,3);
+insert into DETFACTURA values (12,12,2,4);
+insert into DETFACTURA values (13,13,1,5);
+insert into DETFACTURA values (14,14,1,6);
+insert into DETFACTURA values (15,15,2,7);
